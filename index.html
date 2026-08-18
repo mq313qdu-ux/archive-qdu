@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>أرشيف الأثر النافع | 2025 — 2026</title>
+  <meta name="description" content="أرشيف بصري يجمع طيّات رسائلكم التي لا تُنسى.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="أرشيف الأثر النافع | 2025 — 2026">
+  <meta property="og:description" content="أرشيف بصري يجمع طيّات رسائلكم التي لا تُنسى.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="أرشيف الأثر النافع | 2025 — 2026">
+  <meta name="twitter:description" content="أرشيف بصري يجمع طيّات رسائلكم التي لا تُنسى.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Google Fonts: IBM Plex Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Cursor (Desktop Only) -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+
+  <!-- Loader Screen -->
+  <div id="loader" aria-label="جاري تجهيز الأرشيف">
+    <div class="loader-logo-wrap">
+      <div class="loader-ring"></div>
+      <img src="assets/logo.png" alt="شعار الأرشيف" class="loader-logo">
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="header">
+    <div class="header-brand" id="header-brand" tabindex="0" role="button" aria-label="أرشيف الأثر النافع - العودة للأعلى">
+      <img src="assets/logo.png" alt="شعار أرشيف الأثر النافع" class="header-logo" id="header-logo">
+      <span class="site-title">أرشيف الأثر النافع</span>
+    </div>
+
+    <nav class="header-nav" aria-label="التنقل الرئيسي">
+      <a href="#hero" class="nav-link" id="nav-home">الرئيسية</a>
+      <a href="#about" class="nav-link" id="nav-about">عن الأرشيف</a>
+      <a href="#gallery" class="nav-link" id="nav-gallery">جميع الرسائل</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="fav-trigger-btn" id="fav-trigger-btn" type="button" aria-label="عرض المفضلات" aria-expanded="false" aria-controls="drawer-backdrop">
+        <span>❤️</span>
+        <span>المفضلة</span>
+        <span class="fav-badge" id="fav-count-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-heart-element" aria-hidden="true">🤍</div>
+        
+        <div class="hero-pill">
+          <span>2025 — 2026 | أرشيف رسائل الطلاب</span>
+        </div>
+
+        <h1 class="hero-title">
+          حيث تعيش رسائلكم
+          <span class="hero-title-line2">… في داخلي أبدًا</span>
+        </h1>
+
+        <p class="hero-description">
+          أرشيف بصري يجمع طيّات رسائلكم التي لا تُنسى.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn-primary" id="btn-explore" type="button">
+            <span>استكشف الرسائل</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </button>
+
+          <button class="btn-secondary" id="btn-surprise-hero" type="button">
+            <span>✨</span>
+            <span>فاجئني برسالة</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Layered Cards Presentation -->
+      <div class="hero-stage" id="hero-stage">
+        <div class="hero-cards-container" id="hero-cards-container"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-watermark" aria-hidden="true">2025 — 2026</div>
+
+      <div class="about-card">
+        <h2 class="about-title">عن الأرشيف</h2>
+        <p class="about-text">
+          هذه المساحة وُجدت لتخليد مسيرة سنوات قضيناها معًا؛ جمعنا فيها رسائل ومشاعر الطلاب، لتبقى ذكرى دافئة وأثرًا باقيًا يروي تفاصيل الرحلة ونقاء صحبتها.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-header">
+        <h2 class="gallery-title">من هنا تبدأ الذكريات</h2>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="gallery-grid" id="gallery-grid"></div>
+
+      <!-- Lazy Loading Sentinel Observer -->
+      <div id="gallery-sentinel" aria-hidden="true" style="height: 20px;"></div>
+
+      <!-- Gallery Ending -->
+      <div class="gallery-ending-container">
+        <p class="gallery-ending-text">
+          انتهت رسائل المعرض اليوم، لكن أثرها في القلب مستمر… بانتظار فصول جديدة تُكتب معكم.
+        </p>
+
+        <div class="gallery-ending-actions">
+          <button class="btn-primary" id="btn-surprise-ending" type="button">
+            <span>✨</span>
+            <span>فاجئني برسالة</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Action Button -->
+  <button class="floating-random-btn" id="btn-surprise-float" type="button" aria-label="فاجئني برسالة">
+    <span>✨</span>
+    <span class="btn-label">فاجئني برسالة</span>
+  </button>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top-btn" id="back-to-top-btn" type="button" aria-label="العودة لأعلى الصفحة">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Favorites Side Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" role="dialog" aria-modal="true" aria-label="الرسائل المفضلة">
+    <aside class="fav-drawer" id="fav-drawer">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <span>❤️</span>
+          <h3 class="drawer-title">المفضلة (<span id="drawer-count">0</span>)</h3>
+        </div>
+        <button class="drawer-close-btn" id="drawer-close-btn" type="button" aria-label="إغلاق قائمة المفضلة">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="fav-list" id="fav-list"></div>
+
+        <div class="drawer-empty-state" id="drawer-empty-state">
+          <div class="drawer-empty-heart" aria-hidden="true">🤍</div>
+          <p class="drawer-empty-text">بعض الذكريات تحتاج أولاً أن تختارها.</p>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <button class="btn-clear-fav" id="btn-clear-fav" type="button">مسح المفضلات</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-backdrop" id="lightbox-backdrop" role="dialog" aria-modal="true" aria-label="عارض الرسالة">
+    <div class="lightbox-bg-blur" id="lightbox-bg-blur" aria-hidden="true"></div>
+    <div class="lightbox-radial-glow" aria-hidden="true"></div>
+
+    <div class="lightbox-container" id="lightbox-container">
+      <div class="lightbox-img-wrapper" id="lightbox-img-wrapper">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" draggable="false">
+        
+        <div class="lightbox-error-box" id="lightbox-error-box" style="display: none;">
+          <p class="lightbox-error-text">تعذر عرض هذه الرسالة</p>
+          <button class="btn-secondary" id="lightbox-error-close-btn" type="button">إغلاق</button>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="lightbox-nav-btn prev-btn" id="lightbox-prev-btn" type="button" aria-label="الرسالة التالية">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <button class="lightbox-nav-btn next-btn" id="lightbox-next-btn" type="button" aria-label="الرسالة السابقة">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Lightbox Controls -->
+    <div class="lightbox-controls" id="lightbox-controls">
+      <div class="lightbox-top-bar">
+        <span class="lightbox-counter" id="lightbox-counter">1 / 94</span>
+
+        <div class="lightbox-top-actions">
+          <button class="lightbox-btn" id="lightbox-fav-btn" type="button" aria-label="إضافة أو إزالة من المفضلة">🤍</button>
+          
+          <button class="lightbox-btn" id="lightbox-fullscreen-btn" type="button" aria-label="ملء الشاشة">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <polyline points="9 21 3 21 3 15"></polyline>
+              <line x1="21" y1="3" x2="14" y2="10"></line>
+              <line x1="3" y1="21" x2="10" y2="14"></line>
+            </svg>
+          </button>
+
+          <button class="lightbox-btn" id="lightbox-close-btn" type="button" aria-label="إغلاق العارض">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Easter Egg Modal -->
+  <div class="easter-modal-backdrop" id="easter-modal" role="dialog" aria-modal="true">
+    <div class="easter-card">
+      <span class="easter-icon" aria-hidden="true">🤍</span>
+      <p class="easter-text" id="easter-text"></p>
+      <button class="btn-primary" id="easter-close-btn" type="button">إغلاق</button>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-block">
+          <div class="footer-brand-header">
+            <img src="assets/logo.png" alt="شعار الأرشيف" class="footer-logo">
+            <div>
+              <h3 class="footer-title">أرشيف الأثر النافع</h3>
+              <span class="footer-curator-name">مقتدى الكناني · 2025 — 2026</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            أرشيف لرسائل ومشاعر الطلاب، وثّقناها لتبقى أثرًا نافعًا وذكرى طيبة تُخلّد مسيرتنا معًا.
+          </p>
+        </div>
+
+        <div class="footer-meta-block">
+          <div class="footer-count-chip">
+            <span>✨</span>
+            <span id="footer-count">94 رسالة موثقة</span>
+          </div>
+
+          <div class="footer-social-links">
+            <a href="https://t.me/Mq12qm" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="قناة تيليجرام @Mq12qm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span>@Mq12qm</span>
+            </a>
+
+            <a href="https://www.instagram.com/mm22.qq" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="حساب انستغرام @mm22.qq">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>@mm22.qq</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> مقتدى الكناني — جميع الحقوق محفوظة</p>
+        <p>Designed & Curated by Muqtada Al-Kinani</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="./script.js"></script>
+</body>
+</html>

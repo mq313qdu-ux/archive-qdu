@@ -1,0 +1,6 @@
+{
+  "name": "أرشيف الأثر النافع",
+  "description": "أرشيف بصري يجمع طيّات رسائلكم التي لا تُنسى (2025 — 2026)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
